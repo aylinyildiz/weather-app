@@ -14,7 +14,7 @@ const App = () => {
 
   useEffect(() => {
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${params.key}&q=${params.location}&days=7`
+      `http://api.weatherapi.com/v1/forecast.json?key=${params.key}&q=${params.location}&days=3`
     )
       .then((response) => response.json())
       .then((data) => setWeatherInfo(data));
