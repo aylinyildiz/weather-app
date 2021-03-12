@@ -8,8 +8,9 @@ $color5: #2092a9;
 
 body {
   background-color: lighten($color1, 10%);
-  background-image: url('./assets/pexels.jpg');
+  background-image: url("./assets/pexels.jpg");
   background-size: cover;
+  font-family: "Lato", sans-serif;
 }
 
 *,
@@ -26,8 +27,25 @@ body {
   justify-content: center;
   align-items: center;
   input {
-    width: 200px;
+    width: 400px;
     height: 50px;
+  }
+
+  .btn {
+    border: none;
+    background-color: rgb(58, 82, 123);
+    color: white;
+    padding: 16px 50px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 150ms ease-in-out;
+    &:hover {
+      box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px;
+    }
   }
 }
 
@@ -42,10 +60,8 @@ body {
   box-shadow: 0px 0px 25px 1px rgba(50, 50, 50, 0.1);
   animation: appear 500ms ease-out forwards;
 
-
   h1 {
     position: absolute;
-    font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 80px;
     color: $color3;
@@ -58,7 +74,6 @@ body {
 
   p {
     position: absolute;
-    font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 28px;
     color: lighten($color3, 10%);
@@ -179,4 +194,3 @@ body {
     transform: translateX(0px);
   }
 }
-
